@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:weightSum="4"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:fontFamily="sans-serif-black"
+            android:text="NOTE APP"
+            android:textAlignment="center"
+            android:textSize="26sp"
+            android:layout_weight="0.25"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:id="@+id/recyclerview"
+            android:layout_weight="3.25">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="NOTE GOES HERE"
+            android:id="@+id/addnotetxt"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif"
+            android:layout_weight="0.25"
+            android:layout_margin="24dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_margin="24dp"
+            android:id="@+id/addnewnotebtn"
+            android:fontFamily="sans-serif-black"
+            android:text="ADD NOTE"
+            android:textSize="14sp"
+            android:layout_weight="0.25"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
